@@ -17,6 +17,8 @@ DLO generates a Pythonic reverse shell that as of July 29th, 2019, is undetectab
 
 # Dark Lord Obama Official Release Demo
 
+*Please click this link for a demostration video of how to use*
+
 <a href=https://encryptedarchives2.s3-us-west-1.amazonaws.com/darklordobamarelease.mp4>Demo Video</a>
 
 Currently you can, after you gain a foothold in organization
