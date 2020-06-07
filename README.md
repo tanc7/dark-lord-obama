@@ -37,3 +37,21 @@ Run it as ```python darklordobama.py <attacker IP> <attacker listening port>```
 
 ![](https://xringarchery.files.wordpress.com/2019/07/a_undetectable_payload5.png)
 
+# How does it work?
+
+# First it chops up your payload into two-character segments, "Command Segmentation)
+
+![](https://encryptedarchives2.s3-us-west-1.amazonaws.com/Screenshot+from+2020-06-06+18-47-41.png)
+
+# A ArrayMap is produced to allow the payload to reconstitute itself
+
+![](https://encryptedarchives2.s3-us-west-1.amazonaws.com/Screenshot+from+2020-06-06+18-47-31.png)
+
+# The payload is then shuffled into a list array and then encrypted with AES-128
+
+![](https://encryptedarchives2.s3-us-west-1.amazonaws.com/Screenshot+from+2020-06-06+18-47-23.png)
+
+# The encrypted payload is encoded in Base64 format
+
+![](https://encryptedarchives2.s3-us-west-1.amazonaws.com/Screenshot+from+2020-06-06+18-47-14.png)
+
