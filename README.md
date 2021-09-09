@@ -2,12 +2,17 @@
 
 The Python 2 to 3 transition was a clusterfuck, a atomic blast of breakage. [https://lwn.net/Articles/843660/](https://lwn.net/Articles/843660/)
 
-It pisses me off, because my code worked PERFECTLY. But now PyPi won't properly install dependencies required for this to work. Even manually installing PyCrypto will through errors.
+It pisses me off, because my code worked PERFECTLY. But now PyPi won't properly install dependencies required for this to work. Even manually installing PyCrypto will through errors [https://pypi.org/project/pycrypto/#files](https://pypi.org/project/pycrypto/#files).
 
 And I am not a big fan of half-assed hacks to fix things that should have been supported via some sort of compatibility.
 
 Everyone, please move on along to the successor of DarkLordObama, EXOCET-Antivirus-Evasion. [https://github.com/tanc7/EXOCET-AV-Evasion](https://github.com/tanc7/EXOCET-AV-Evasion)
 
+Python is not IMO a programming language. It's a scripting language because it runs through a interpreter built primarily on C and various other languages.
+
+Golang on the other hand, can be cross-compiled across multiple platforms with minimum modifications from a single codebase, usually for compatibility issues with the target operating system. But the point is, Golang WORKS.
+
+I am planning to add inline assembly execution via Golang, which is [considered impossible](https://stackoverflow.com/questions/2951028/is-it-possible-to-include-inline-assembly-in-go-code), but watch me do it. I will do it!
 
 ![](https://xringarchery.files.wordpress.com/2019/07/obama-sith-lord.jpg)
 
