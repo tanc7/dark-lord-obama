@@ -1,12 +1,12 @@
 # Dark Lord Obama will now be transitioned into Google Golang
 
-The Python 2 to 3 transition was a clusterfuck, a atomic blast of breakage. [](https://lwn.net/Articles/843660/)
+The Python 2 to 3 transition was a clusterfuck, a atomic blast of breakage. [https://lwn.net/Articles/843660/](https://lwn.net/Articles/843660/)
 
 It pisses me off, because my code worked PERFECTLY. But now PyPi won't properly install dependencies required for this to work. Even manually installing PyCrypto will through errors.
 
 And I am not a big fan of half-assed hacks to fix things that should have been supported via some sort of compatibility.
 
-Everyone, please move on along to the successor of DarkLordObama, EXOCET-Antivirus-Evasion. [](https://github.com/tanc7/EXOCET-AV-Evasion)
+Everyone, please move on along to the successor of DarkLordObama, EXOCET-Antivirus-Evasion. [https://github.com/tanc7/EXOCET-AV-Evasion](https://github.com/tanc7/EXOCET-AV-Evasion)
 
 
 ![](https://xringarchery.files.wordpress.com/2019/07/obama-sith-lord.jpg)
